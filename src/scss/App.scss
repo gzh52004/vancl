@@ -1,0 +1,29 @@
+@function vw($n) {
+    @return ($n *100 / 750) + vw;
+}
+.active{
+    color:red;
+}
+div{
+    nav{
+       width: 100vw;
+       height: vw(100);
+       position: fixed;
+       bottom: 0;
+       ul{
+           display: flex;
+           justify-content: space-around;
+           line-height: vw(100);
+           li{
+            height: vw(100);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+           
+           }
+           
+       }
+
+    }
+}
