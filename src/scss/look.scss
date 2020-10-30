@@ -1,0 +1,66 @@
+@function vw($n) {
+    @return ($n *100 / 750) + vw;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    .detail{
+        height: vw(100);
+        padding: 0;
+        position: relative;
+        background-color: red;
+        .topback{
+            width: vw(50);
+            height: vw(50);
+            position: absolute;
+            top: vw(25);
+            left: vw(50);
+            border-top: white 2px solid;
+            border-left: solid white 2px;
+            transform: rotate(-45deg);
+        }
+        .toptitle{
+            height: vw(100);
+            line-height: vw(100);
+            text-align: center;
+            font-size: 24px;
+            position: absolute;
+            top: 0;
+            left: 45%;
+            
+        }
+
+    }
+    .banner{
+
+    }
+    .L-content{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        dl{
+            height: vw(422);
+            width: vw(375);
+            padding:  0 vw(10) 0;
+            dd{
+                height: vw(340);
+                width: vw(340);
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            dt{
+                display: flex;
+                flex-direction: column;
+                p{
+                    height: vw(26);
+                }
+                span{
+                    height: vw(16);
+                }
+            }
+        }
+    }
+}
