@@ -1,0 +1,36 @@
+@function vw($n) {
+    @return ($n *100 / 750) + vw;
+}
+.section{
+    width: 75%;
+    height: 70%;
+    // background: red;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start；
+}
+.one{
+    width: vw(170);
+    height:vw(186) ;
+    // background: gainsboro;
+    margin-top: 3px;
+    
+}
+.pho{
+    height: 80%;
+    width: 100%;
+    // background: gold;
+    // background: url(https://i2.vanclimg.com/cms/20200520/6386754-2201909291608419203.jpg) no-repeat center;
+    
+    background: url(https://i2.vanclimg.com/cms/20200520/6386754-2201909291608419203.jpg) no-repeat center;
+    background-size: 100% 100%;
+}
+.word{
+    width: 100%;
+    height: 20%;
+    // background: bisque;
+    text-align: center;
+    line-height: vw(35);
+    font-size: 10px;
+}

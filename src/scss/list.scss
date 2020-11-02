@@ -1,0 +1,69 @@
+@function vw($n) {
+    @return ($n *100 / 750) + vw;
+}
+.did_list{
+    width: 100%;
+    height: vw(72);
+    
+     display: flex;
+    justify-content: space-around;
+}
+.did_list_box{
+    width: vw(186);
+    height: 100%;
+    
+    text-align: center;
+    line-height: vw(72);
+    
+}
+.did_main{
+   
+     position: absolute;
+     top: 81px;
+     bottom: 49px;
+     width: 100%;
+
+}
+.box{
+    position: relative;
+}
+.did_main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y:scroll
+}
+.did_main_box{
+    width: 187px;
+    height: 225px;
+    
+    pad: 10px
+    ;
+    display: flex;
+    flex-direction: column;
+}
+.did_main_pic{
+    width: 148px;
+    height: 148px;
+    
+    margin: 12px auto;
+    background: url(http://i.vanclimg.com/640/q80/product/6/3/8/6389252/big/6389252-1j202008271706518529.jpg )no-repeat center;
+    background-size: 100% 100%;
+}
+.did_main_name{
+    width: 100%;
+    height: 20px;
+    
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+}
+.did_main_price{
+    width: 100%;
+    height: 18px;
+    
+    text-align: center;
+    line-height: 18px;
+    margin-top: 7px;
+    font-size: 13px;
+}

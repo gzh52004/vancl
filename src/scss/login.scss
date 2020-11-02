@@ -1,0 +1,13 @@
+@function vw($n) {
+    @return ($n *100 / 750) + vw;
+}
+.UserName{
+    border: 0;
+    font-size: 1.2em;
+    display: inline-block;
+    background: #f5f5f5;
+    color: #b5b5b5;
+    padding: .8em;
+    width: 100%;
+    box-sizing: border-box;
+}

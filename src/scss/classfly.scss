@@ -1,0 +1,73 @@
+@function vw($n) {
+    @return ($n *100 / 750) + vw;
+}
+header{
+    height: vw(90);
+    background: #b81c22;
+    position: relative;
+    text-align: center;
+    color: white;
+    line-height: vw(100);
+.to{
+    width: vw(33);
+    height: vw(33);
+    
+    float: left;position: absolute;
+    top: 50%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(45deg);
+    margin-left: 22px;
+    }
+}
+// ul{
+//     height: 100%;
+//     width: vw(200);
+//     background: yellow;
+
+// }；
+html,body{
+    height:100vh;
+}
+#app{
+    height: 100%;
+}
+.box{
+    height: 100vh
+}
+.main{
+    position: absolute;
+    top: 45px;
+    bottom: 50px;
+    width: 100%;
+    // background: pink;
+    display: flex;
+
+}
+.ull{
+    width:vw(188);
+    background: white
+}
+.lii{
+    width: 100%;
+    height: vw(68);
+    background: rgb(221, 215, 215);
+    margin-top: 1px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 10px;
+}
+.liii{
+    width: 100%;
+    height: vw(442);
+    background: rgb(221, 215, 215);
+    margin-top: 1px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 10px;
+}
+.pic{
+    height: 100%;
+    width: 100%;
+}
