@@ -13,13 +13,13 @@ const mongo=require('../mongo');
 
 // module.exports = router
 
-
 router.get('/', async (req, res) => { 
   
-    const result = await mongo.find("goods", {})
-    console.log(result)
-    res.send(result)
-  })
+  const result = await mongo.find("mine", {})
+  console.log(result)
+  res.send(result)
+})
+
   
   
   

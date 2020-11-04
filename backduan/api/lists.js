@@ -16,7 +16,7 @@ const mongo=require('../mongo');
 
 router.get('/', async (req, res) => { 
   
-    const result = await mongo.find("lists",{})
+    const result = await mongo.find("mine",{})
     console.log(result)
     res.send(result)
   })

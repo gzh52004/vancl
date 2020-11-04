@@ -2,7 +2,7 @@ import React from 'react';
 import {Route,Redirect,Switch, NavLink} from 'react-router-dom';
 import Classfly from './views/classfly';
 import Home from './views/home';
-import Mine from './views/mine';
+// import Mine from './views/mine';
 import Shop from './views/shop';
 import View from './views/view';
 import './scss/common.scss';
@@ -13,7 +13,9 @@ import './scss/sort.scss';
 import './scss/list.scss';
 import './scss/login.scss';
 import Dvd from './views/dvd';
+import Self from './views/self';
 import Login from './views/login';
+import './scss/self.scss';
 
 function App() {
   const nav = [
@@ -45,7 +47,7 @@ function App() {
       text:'我的',
       path:'/mine',
       name:'mine',
-      component:Mine,
+      component:Self,
     },
    
 ]
@@ -70,6 +72,7 @@ function App() {
               <Route path="/notfound" render={()=>{return(<div>404</div>)}}/>
               <Route path="/dvd" component={Dvd}></Route>
               <Route path="/login" component={Login}></Route>
+              <Route path="/self" component={Self}></Route>
               <Redirect from="/" to="/home" exact/>
               <Redirect to="/notfound"/>
             </Switch>

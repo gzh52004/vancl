@@ -128,6 +128,6 @@ module.exports = {
 }
 
 
-find('classly').then(res => {
-    console.log(res)
-})
+// find('goods').then(res => {
+//     console.log(res)
+// })

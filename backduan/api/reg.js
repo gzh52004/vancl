@@ -10,20 +10,23 @@ const mongo = require('../mongo');
 
 // 获取
 
-router.get('/', async (req, res) => { 
+router.get('/', async (req, res) => {
+  let { username,password } = req.query;
+  const result = await mongo.find('login', { username,password});
   
-  const result = await mongo.find("goods", {})
-  console.log(result)
-  res.send(result)
+  if (result.length > 0) {
+      res.send(formatData({data:result}))
+
+  } else {
+    res.send(formatData({ code: 0 }))
+  }
 })
 
 
 
-// module.exports = router;
-// router.get('/', async (req, res) => {
-    
-//   const result = await mongo.find('goods', {})
-//   res.send(result)
-// })
 
-module.exports = router
+
+
+
+
+module.exports = router;

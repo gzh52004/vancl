@@ -2,7 +2,10 @@
 import axios from 'axios';
 import React,{Component}from 'react'
 class Dvd extends Component{
-  
+  to=()=>{
+    this.props.history.push("/classfly")
+}
+re
       state={
          lists:[]
       }
@@ -22,7 +25,7 @@ class Dvd extends Component{
         <div className="box">
             <header> 
                 免烫衬衫
-              <div className="to"></div>
+                <div className="to" onClick={this.to}></div>
             </header>
              <div className="did_list">
                  <div className="did_list_box">新品</div>
@@ -37,6 +40,7 @@ class Dvd extends Component{
                   <div className="did_main_pic" style={{ background: `url('${item.img}') center center /cover` }}></div>
                   <div className="did_main_name">{item.name}</div>
                   <div className="did_main_price">{item.price}</div>
+                  
                  </div>
                  })
                }

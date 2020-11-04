@@ -1,0 +1,119 @@
+@function vw($n) {
+    @return ($n *100 / 750) + vw;
+}
+
+.top{
+    width: 100%;
+    height: 188px;
+    background:black;
+    padding-top: 8px;
+    font-size: 12px;
+    color: white;
+}
+.touxiang{
+    width: 73px;
+    height: 73px;
+   background: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2103930802,2889560399&fm=26&gp=0.jpg)no-repeat center;
+   background-size: 100% 100%;
+    margin:0 auto ;
+
+}
+.self_name{
+    width: 100%;
+    height: 21px;
+    text-align: center;
+    line-height: 21px; 
+    margin-top: 20px;
+
+}
+.money{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 21px;
+   
+    margin-top: 27px;
+}
+.money_box{
+   width: 120px;
+   height: 21px;
+   text-align: center;
+   line-height: 21px;
+}
+.aaa{
+   
+    width: 0.8rem;
+    height: 0.8rem;
+    border-top: 1px solid #a5a5a5;
+    border-right: 1px solid #a5a5a5;
+    transform: translateY(-50%) rotate(45deg);
+    -webkit-transform: translateY(-50%) rotate;
+    margin-top: 19px;
+    margin-right: 9px;
+
+}
+.line{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    margin-top: -2px;
+    border-bottom: 1px solid #f0eff5;
+}
+.qq{
+    margin-left: 8px;
+}
+.did_list1{
+    width: 100%;
+    height: vw(72);
+    font-size: 13px;
+     display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+.did_list_box1{
+    width: vw(186);
+    height: 100%;
+    
+    text-align: center;
+    line-height: vw(72);
+    
+}
+.lines{
+    width: 100%;
+    height: 13px;
+    background:#f0eff5
+}
+.self_main{
+    width: 100%;
+    height: 284px;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.one1{
+    width: 25%;
+    height: 86px;
+   
+    border-left: 1px solid #f0eff5;
+    border-right: 1px solid #f0eff5;
+}
+.pic1{
+    width: 30px;
+    height: 30px;
+    background: khaki;
+    background-size: 50% 50%;
+    margin: 9px auto;
+}
+.word1{
+    width: 100%;
+    height: 30%;
+    
+    text-align: center;
+    line-height: 2;
+    font-size: 10px;
+}
